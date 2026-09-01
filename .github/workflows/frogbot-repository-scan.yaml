@@ -21,6 +21,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ matrix.branch }}
+      - uses: actions/setup-node@v4       #for npm packages
+        with:
+          node-version: "18"
+      - name: Install npm dependencies
+        run: yarnpkg install
       - uses: jfrog/frogbot@v3
         env:
           JF_URL: ${{ secrets.JF_URL }}
