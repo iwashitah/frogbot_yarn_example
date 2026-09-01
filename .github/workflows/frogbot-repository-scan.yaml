@@ -25,7 +25,8 @@ jobs:
         with:
           node-version: "18"
       - name: Install npm dependencies
-        run: yarnpkg install
+#        run: yarnpkg install
+        run: npm install
       - uses: jfrog/frogbot@v3
         env:
           JF_URL: ${{ secrets.JF_URL }}
