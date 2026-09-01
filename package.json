@@ -1,0 +1,10 @@
+{
+  "name": "frog-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Hirofumi Iwashita5",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "4.17.20"
+  }
+}
